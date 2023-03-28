@@ -1,0 +1,21 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type PostDto {
+  id: ID!
+  title: String!
+  text: String!
+  isPublished: Boolean!
+}
+
+type Query {
+  posts: [PostDto!]!
+  post(id: Float!): PostDto!
+}
+
+type Mutation {
+  createPost(id: Float!, title: String!, text: String!, isPublished: Boolean!): PostDto!
+  updatePost(id: Float!, title: String!): PostDto!
+  deletePost(id: Float!): PostDto!
+}
